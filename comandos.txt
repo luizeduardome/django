@@ -1,0 +1,27 @@
+// criação do ambiente virtual
+python3 -m venv ~/.virtualenvs/djangodev
+
+// ativação do ambiente virtual
+source ~/.virtualenvs/<nome-do-projeto>/bin/activate
+
+// Se o comando source não estiver disponível, você pode tentar usar um ponto em vez disso:
+. ~/.virtualenvs/djangodev/bin/activate
+
+// instalar o django
+python -m pip install Django
+
+// saber a versão do django
+django-admin --version
+
+// adicionar chave ssh para evitar pedir senha constantemente
+eval "$(ssh-agent -s)"
+// em seguida
+ssh-add ~/.ssh/id_ed25519
+
+// startar projeto django - utilizando o ponto no final para se criar apenas o diretório principal
+django-admin startproject <nome-do-projeto> .
+
+// rodar a aplicação (projeto) django
+python3 manage.py runserver
+
+
