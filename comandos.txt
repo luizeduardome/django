@@ -24,4 +24,7 @@ django-admin startproject <nome-do-projeto> .
 // rodar a aplicação (projeto) django
 python3 manage.py runserver
 
+// criar uma aplicação para o projeto
+python3 manage.py startapp <nome-da-aplicação>
+
 
